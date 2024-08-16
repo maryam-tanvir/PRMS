@@ -1,0 +1,222 @@
+
+VILLAGE APIs
+------------
+METHOD: POST
+URL: http://localhost:5000/api/village
+BODY:
+{
+    "village_name": "New Village",
+    "tehsil_id": 1
+}
+
+METHOD: GET
+URL: http://localhost:5000/api/villages
+BODY: None
+
+METHOD: GET
+URL: http://localhost:5000/api/village/:id
+BODY: None
+
+METHOD: PUT
+URL: http://localhost:5000/api/village/:id
+BODY:
+{
+    "village_name": "Updated Village",
+    "tehsil_id": 1
+}
+
+METHOD: DELETE
+URL: http://localhost:5000/api/village/:id
+BODY: None
+
+-----------------------------------
+
+DISTRICT APIs
+-------------
+METHOD: POST
+URL: http://localhost:5000/api/district
+BODY:
+{
+    "district_name": "New District"
+}
+
+METHOD: GET
+URL: http://localhost:5000/api/districts
+BODY: None
+
+METHOD: GET
+URL: http://localhost:5000/api/district/:id
+BODY: None
+
+METHOD: PUT
+URL: http://localhost:5000/api/district/:id
+BODY:
+{
+    "district_name": "Updated District"
+}
+
+METHOD: DELETE
+URL: http://localhost:5000/api/district/:id
+BODY: None
+
+-----------------------------------
+
+TEHSIL APIs
+-----------
+METHOD: POST
+URL: http://localhost:5000/api/tehsil
+BODY:
+{
+    "tehsil_name": "New Tehsil",
+    "district_id": 1
+}
+
+METHOD: GET
+URL: http://localhost:5000/api/tehsils
+BODY: None
+
+METHOD: GET
+URL: http://localhost:5000/api/tehsil/:id
+BODY: None
+
+METHOD: PUT
+URL: http://localhost:5000/api/tehsil/:id
+BODY:
+{
+    "tehsil_name": "Updated Tehsil",
+    "district_id": 1
+}
+
+METHOD: DELETE
+URL: http://localhost:5000/api/tehsil/:id
+BODY: None
+
+-----------------------------------
+
+TUBEWELL APIs
+-------------
+METHOD: POST
+URL: http://localhost:5000/api/tubewell
+BODY:
+{
+    "village_id": 1,
+    "installation_date": "2023-01-01",
+    "capacity": 500
+}
+
+METHOD: GET
+URL: http://localhost:5000/api/tubewells
+BODY: None
+
+METHOD: GET
+URL: http://localhost:5000/api/tubewell/:id
+BODY: None
+
+METHOD: PUT
+URL: http://localhost:5000/api/tubewell/:id
+BODY:
+{
+    "village_id": 1,
+    "installation_date": "2023-01-01",
+    "capacity": 500
+}
+
+METHOD: DELETE
+URL: http://localhost:5000/api/tubewell/:id
+BODY: None
+
+-----------------------------------
+
+BATTERY APIs
+------------
+METHOD: POST
+URL: http://localhost:5000/api/battery
+BODY:
+{
+    "tubewell_id": 1,
+    "capacity": 1000
+}
+
+METHOD: GET
+URL: http://localhost:5000/api/batteries
+BODY: None
+
+METHOD: GET
+URL: http://localhost:5000/api/battery/:id
+BODY: None
+
+METHOD: PUT
+URL: http://localhost:5000/api/battery/:id
+BODY:
+{
+    "tubewell_id": 1,
+    "capacity": 1200
+}
+
+METHOD: DELETE
+URL: http://localhost:5000/api/battery/:id
+BODY: None
+
+-----------------------------------
+
+MOTOR APIs
+----------
+METHOD: POST
+URL: http://localhost:5000/api/motor
+BODY:
+{
+    "tubewell_id": 1,
+    "power": 200
+}
+
+METHOD: GET
+URL: http://localhost:5000/api/motors
+BODY: None
+
+METHOD: GET
+URL: http://localhost:5000/api/motor/:id
+BODY: None
+
+METHOD: PUT
+URL: http://localhost:5000/api/motor/:id
+BODY:
+{
+    "tubewell_id": 1,
+    "power": 250
+}
+
+METHOD: DELETE
+URL: http://localhost:5000/api/motor/:id
+BODY: None
+
+-----------------------------------
+
+SOLAR PANEL APIs
+----------------
+METHOD: POST
+URL: http://localhost:5000/api/solarpanel
+BODY:
+{
+    "tubewell_id": 1,
+    "capacity": 1500
+}
+
+METHOD: GET
+URL: http://localhost:5000/api/solarpanels
+BODY: None
+
+METHOD: GET
+URL: http://localhost:5000/api/solarpanel/:id
+BODY: None
+
+METHOD: PUT
+URL: http://localhost:5000/api/solarpanel/:id
+BODY:
+{
+    "tubewell_id": 1,
+    "capacity": 1800
+}
+
+METHOD: DELETE
+URL: http://localhost:5000/api/solarpanel/:id
+BODY: None
